@@ -1,0 +1,38 @@
+{
+  "author": "Milton Rosas (backend part only)",
+  "name": "soft-jobs",
+  "version": "2.0.0",
+  "description": "Proyecto Global Desafio Soft Jobs",
+  "engines": {
+    "node": "18.16.0"
+  },
+  "scripts": {
+    "dev": "npm run dev:frontend & npm run dev:backend",
+    "dev:frontend": "npm run dev --prefix ./frontend",
+    "dev:backend": "npm run dev --prefix ./backend",
+    "prepare": "npm run prepare:frontend && npm run prepare:backend",
+    "prepare:frontend": "npm i --prefix ./frontend",
+    "prepare:backend": "npm i --prefix ./backend"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "bootstrap": "^5.3.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.11.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.18.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react-swc": "^3.4.1",
+    "vite": "^4.5.0"
+  }
+}
